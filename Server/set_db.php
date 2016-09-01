@@ -19,7 +19,11 @@ if (isset($_POST['up'])) {
             $wplayers = $parts[1];
             $db->exec("INSERT INTO world (name,players) VALUES ('{$wname}', {$wplayers})");
         }
-        echo "oke";
+        echo "Success!";
+    } else {
+        echo "Database doesn't exist!";
     }
-}            
+} else {
+    echo "Invalid POST data!";
+}           
 ?>
