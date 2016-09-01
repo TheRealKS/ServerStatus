@@ -1,0 +1,7 @@
+main: com.koens.serverstatus.ServerStatus
+version: 1.0
+name: ServerStatus
+commands:
+  statusupdate:
+    description: updates the server status
+    usage: /statusupdate
