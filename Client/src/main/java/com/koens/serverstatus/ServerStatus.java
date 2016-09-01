@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class ServerStatus extends JavaPlugin {
-
+    
     private int taskID;
 
     @Override
