@@ -17,7 +17,7 @@ public class UpdateUpStatus implements Runnable {
     @Override
     public void run() {
         plugin.getLogger().info("Writing server status data to the remote server!");
-        String params = "up=1&players=0&worlds=" + plugin.getWorldsString();
+        String params = "up=" + up + "&players=0&worlds=" + plugin.getWorldsString();
         byte[] postdata = params.getBytes(java.nio.charset.StandardCharsets.UTF_8);
         int postdatalenght = postdata.length;
         try {
