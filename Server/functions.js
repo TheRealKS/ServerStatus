@@ -22,3 +22,7 @@ function getWorldData(worldstring) {
     }
     return worldmap;
 }
+
+function setupRefreshTimer() {
+    window.setInterval(getServerData(), 300000);
+}
